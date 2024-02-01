@@ -11,6 +11,7 @@
 	--border-radius: 12px;
 }
 
+
 h2 {
 	font-size: 2rem;
 	font-weight: bold;
@@ -45,7 +46,7 @@ li {
 header {
 	height: var(--header-height);
 	background-color: var(--backgroundB);
-	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+	/*box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -106,6 +107,8 @@ nav button img:active {
 
 article {
 	background-color: var(--backgroundB);
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 article section:not(:last-child):nth-child(odd) {
@@ -439,7 +442,7 @@ article section:nth-child(4) > div > div:last-child > .chat_frame_right {
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: start;
-	padding: 4px 0 0;
+	padding: 20px 16px 16px;
 }
 
 article section:nth-child(4) > div > div:last-child > .chat_frame_right > div {
@@ -546,7 +549,7 @@ article section:nth-child(5) > div img:hover {
  *************
 */
 footer {
-	height: 100px;
+	height: calc(var(--header-height) * 2);
 	background-color: var(--primary);
 	display: flex;
 	justify-content: center;

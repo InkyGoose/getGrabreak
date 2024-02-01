@@ -39,15 +39,15 @@ function setListener(keyword) {
 	var tooltip = document.getElementById(`${keyword}_tooltip`);
 
 
-	id.addEventListener('mouseover', function() {
-		tooltip.style.display = 'block';
-		setShowPosition(id, tooltip);
-	});
+	//id.addEventListener('mouseover', function() {
+	//	tooltip.style.display = 'block';
+	//	setShowPosition(id, tooltip);
+	//});
 
-	id.addEventListener('mouseout', function() {
-		tooltip.style.display = 'none';
-		setShowPosition(id, tooltip);
-	});
+	//id.addEventListener('mouseout', function() {
+	//	tooltip.style.display = 'none';
+	//	setShowPosition(id, tooltip);
+	//});
 
 	id.addEventListener('click', function() {
 		if(tooltip.style.display === 'block') {
@@ -75,8 +75,9 @@ function setShowPosition(helper, element) {
 	if (screenHeight - helperRect.top < elementHeight) {
 		elementTop = elementHeight * -1;
 	  }
-	if (screenWidth - helperRect.left < elementWidth) {
-		elementLeft = helperRect.left * -1;//elementWidth * -1 + helperRect.right - helperRect.left;
+	var diff = screenWidth - helperRect.left;
+	if (diff < elementWidth) {
+		elementLeft = (elementWidth - diff) * -1;//elementWidth * -1 + helperRect.right - helperRect.left;
 
 	  }
 	

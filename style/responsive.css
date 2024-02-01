@@ -117,6 +117,48 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	article section:first-child div h1 {
+		font-size: 3em;
+	}
+
+	article section:nth-child(2) > div > div {
+		width: 400px;
+	}
+
+	article section:nth-child(2) > div {
+		padding: 0;
+	}
+
+	article section:nth-child(2) div img {
+		width: 18rem;
+	}
+	article section:nth-child(3) > div > img {
+		width: 18rem;
+	}
+
+	article section:nth-child(3) > div {
+		padding: 48px 0;
+	}
+
+	article section:nth-child(3) h3 {
+		min-width: 322px;
+	}
+
+	body > article > section:nth-child(4) > div > div:nth-child(3) > div > div > h3 {
+		font-size: 1.4rem;
+	}
+
+	article section:nth-child(4) > div > div:last-child > .chat_frame_right > div {
+		width: 146px;
+	}
+
+	article section:nth-child(5) {
+		padding: 0;
+	}
+}
+
+
 @media screen and (max-width: 700px) {
 /*************
  *
@@ -145,6 +187,54 @@
 		width: 200px;
 	}
 }
+
+@media screen and (max-width: 425px) {
+	article section:first-child div div:first-child {
+		margin: 70px 0 20px;
+	}
+
+	article section:first-child div h1 {
+		font-size: 3rem;
+	}
+
+	article section:first-child div h3 {
+		font-size: 1.4rem;
+	}
+
+	article section:first-child div a {
+		width: 260px;
+		padding: 16px 0;
+		margin: 50px 0 8px;
+	}
+
+	article section:first-child div img {
+		width: 104px;
+	}
+
+	article section:nth-child(2) > div {
+		padding: 64px 0;
+	}
+
+	article section:nth-child(2) > div > div {
+		width: auto;
+	}
+
+	article section:nth-child(2) div div ul {
+		line-height: 1.2;
+	}
+
+	article section:nth-child(3) > div {
+		height: auto !important;
+		padding: 128px 0;
+	}
+
+	article section:nth-child(4) > div {
+		padding: 64px 32px;
+	}
+}
+
+
+
 
 @media screen and (max-width: 422px) {
 
@@ -193,7 +283,7 @@
  *************
 */
 	article section:nth-child(3) {
-		height: calc(100vh - var(--header-height));
+		min-height: calc(100vh - var(--header-height));
 	}
 	article section:nth-child(3) > div {
 		padding: 32px 0;
@@ -205,12 +295,13 @@
 		/*margin-left: 36px;*/
 	}
 
+
 	article section:nth-child(3) > div > img {
 		width: 18em;
 	}
 
 	article section:nth-child(3) h3 {
-		max-width: 100vw;
+		max-width: 100%;
 		min-width: auto;
 	}
 
@@ -241,5 +332,24 @@
 
 	article section:nth-child(4) > div > div:not(:first-child) .logo_icon {
 		margin: 0 0 7px 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	article section:first-child div div:first-child {
+		margin: 70px 0 20px;
+	}
+
+	article section:nth-child(3) > div {
+		padding: 128px 0;
+	}
+	article section:first-child div h1 {
+		font-size: 2.8rem;
+	}
+	article section:first-child div h3 {
+		font-size: 1.2rem;
+	}
+	article section:nth-child(4) > div {
+		padding: 64px 0 32px;
 	}
 }
