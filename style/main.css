@@ -107,8 +107,9 @@ nav button img:active {
 
 article {
 	background-color: var(--backgroundB);
-	overflow-x: scroll;
-	overflow-y: hidden;
+	overflow: hidden;
+	/*overflow-x: scroll;
+	overflow-y: hidden;*/
 }
 
 article section:not(:last-child):nth-child(odd) {
