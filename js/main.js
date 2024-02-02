@@ -15,6 +15,10 @@ window.onload = function() {
 
 	});
 
+	document.getElementById('changeLanguage').addEventListener('click', function() {
+		alert('Sorry, this webpage has not yet been adapted to other languages. If you have any questions, please contact InkyGoose@outlook.com.');
+	})
+
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -37,17 +41,6 @@ function setListener(keyword) {
 
 	var id = document.getElementById(`${keyword}_helper`);
 	var tooltip = document.getElementById(`${keyword}_tooltip`);
-
-
-	//id.addEventListener('mouseover', function() {
-	//	tooltip.style.display = 'block';
-	//	setShowPosition(id, tooltip);
-	//});
-
-	//id.addEventListener('mouseout', function() {
-	//	tooltip.style.display = 'none';
-	//	setShowPosition(id, tooltip);
-	//});
 
 	id.addEventListener('click', function() {
 		if(tooltip.style.display === 'block') {
